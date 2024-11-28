@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    background-image: url(/MyPortfolio/Media/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover;
+}
+body {
+    min-height: 90%;
+    height: auto;
+}
+/* Header CSS */
+.header {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgb(25, 14, 75);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    font-size: 32px;
+    background: transparent;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+.navbar {
+    background: rgb(25, 14, 75);
+}
+.navbar a {
+    background: rgb(25, 14, 75);
+    position: relative;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: .3s;
+}
+.navbar a:hover::before {
+    width: 100%;
+}
+.titleWeb {
+    margin-top: 75px;
+    padding: 20px 30px;   
+}
+.titleWeb h2 {
+    width: fit-content;
+    background: linear-gradient(162deg, rgba(179,135,40,1) 0%, rgba(191,149,63,1) 7%, rgba(198,164,78,1) 18%, rgba(251,245,183,1) 64%, rgba(252,246,186,1) 100%);
+    padding: 10px 30px;
+    color: rgb(25, 14, 75); 
+}
+/* Home Page CSS */
+.info_home {
+    height: auto;
+    min-height: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 30px;
+    padding: 30px;
+}
+.info_home .photo {
+    width: 30%;
+    border: 20px;
+}
+.info_home .photo img{
+    border-radius: 20px;
+    border: 5px solid rgb(243, 191, 128);
+}
+.info_home .summary {
+    width: 70%;
+    padding: 20px;
+    font-size: 25px;
+}
+.info_home .summary .home_h1{
+    margin-bottom: 10px;
+    color: rgb(243, 191, 128);
+}
+.info_home .summary .home_h4{
+    width: fit-content;
+    margin-bottom: 20px;
+    color: rgb(255, 145, 0);
+    overflow: hidden; 
+    border-right: .15em solid rgb(25, 14, 75); 
+    white-space: nowrap; 
+    margin-left: 0 auto; 
+    animation: 
+        typing 1.8s steps(80, end),
+        blink-caret 1.3s step-end infinite;
+}
+.info_home .summary p{
+    color: black;
+    font-size: 15px;
+}
+.info_home .summary .box1{
+    margin-top: 20px;
+    width: 100%;
+    min-height: 200px;
+    height: auto;
+    background: rgb(25, 14, 75);
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.info_home .summary .box1 .cntn{
+    width: 50%;
+    min-height: 100px;
+    height: auto;
+    background: rgb(236, 234, 234);
+    border-radius: 15px;
+    padding: 10px;
+}
+.info_home .summary .box1 .cntn h2{
+    background: transparent;
+}
+.info_home .summary .box1 .cntn p{
+    margin-top: 5px;
+    font-size: 16px;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 36% }
+  }
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    5% { border-color: orange; }
+}
+/* About Page CSS */
+.info_about {
+    height: auto;
+    min-height: 60%;
+    align-items: center;
+    margin: 0px 30px 100px;
+    padding: 30px;
+    background: rgb(25, 14, 75);
+    border-radius: 25px;
+    border: 7px solid rgb(243, 191, 128);
+}
+.info_about .sum{
+    height: auto;
+    min-height: 30%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    background: rgb(25, 14, 75);
+}
+.info_about .sum .photo{
+    min-height: 100px;
+    height: auto;
+    padding: 20px;
+    width: 15%;
+    background: rgb(25, 14, 75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info_about .sum .info{
+    min-height: 100px;
+    height: auto;
+    padding: 20px;
+    width: 85%;
+    background: rgb(25, 14, 75);
+}
+.info_about .sum .info h1{
+    margin-bottom: 10px;
+    background: transparent;
+    color: white;
+}
+.info_about .sum .info h3{
+    margin-bottom: 10px;
+    background: linear-gradient(162deg, rgba(179,135,40,1) 0%, rgba(191,149,63,1) 7%, rgba(198,164,78,1) 18%, rgba(251,245,183,1) 64%, rgba(252,246,186,1) 100%);
+    color: rgb(11,40,56);
+}
+.info_about .sum1{
+    height: auto;
+    min-height: 30%;
+    padding: 30px;
+    background: linear-gradient(162deg, rgba(179,135,40,1) 0%, rgba(191,149,63,1) 7%, rgba(198,164,78,1) 18%, rgba(251,245,183,1) 64%, rgba(252,246,186,1) 100%);
+}
+.info_about .sum1 .info{
+    min-height: 50px;
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+}
+.info_about .sum1 .info .box1{
+    width: 30%;
+    height: auto;
+    min-height: 100px;
+    background: white;
+    text-align: center;
+    padding-top: 20px;
+}
+.info_about .sum1 .info .box2{
+    width: 70%;
+    height: auto;
+    min-height: 100px;
+    background: rgb(11,40,56);
+    padding: 10px;
+}
+.info_about .sum1 .info .box2 h3{
+    color: white;
+}
+.info_about .sum1 .info .box1 h1, h3{
+    margin-bottom: 5px;
+    background: transparent;
+    color: rgb(0, 0, 0);
+}
+/* Skill Page CSS */
+.info_skill {
+    height: auto;
+    min-height: 60%;
+    align-items: center;
+    margin: 0px 30px 100px;
+    padding: 30px;
+    background: rgb(25, 14, 75);
+    border-radius: 25px;
+    border: 7px solid rgb(243, 191, 128);
+}
+.info_skill .sum {
+    padding: 25px;
+    align-items: center;
+    text-align: center;
+    background: transparent;
+    color: white;
+}
+.info_skill .box {
+    min-height: 80px;
+    height: auto;
+    background: transparent;
+    width: 100%;
+    padding: 10px;
+}
+.info_skill .box .cntn1 {
+    min-height: 80px;
+    height: auto;
+    background: transparent;
+    width: 100%;
+    padding: 10px;
+}
+.info_skill .box .cntn1 h2{
+    background: transparent;
+    color: rgb(243, 191, 128);
+}
+.info_skill .box .cntn1 .ex1{
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.info_skill .box .cntn1 .ex1 .add1{
+    background: rgb(224, 224, 224);
+    width: 18.5%;
+    height: 300px;
+    max-height: fit-content;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+.info_skill .box .cntn1 .ex1 .add1 img{
+    background: transparent;
+    margin-top: 30%;
+    width: auto;
+    height: 100px;
+}
+.info_skill .box .cntn1 .ex1 .add1 div h2, p{
+    background: transparent;
+    color:rgb(25, 14, 75);
+    margin-left: 5px;
+}
+/* Project Page CSS */
+.info_project {
+    height: auto;
+    min-height: 60%;
+    align-items: center;
+    margin: 0px 30px 100px;
+    padding: 30px;
+    background: rgb(25, 14, 75);
+    border-radius: 25px;
+    border: 7px solid rgb(243, 191, 128);
+}
+.info_project .sum {
+    padding: 25px;
+    align-items: center;
+    text-align: center;
+    background: transparent;
+    color: white;
+}
+.info_project .box{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: transparent;
+}
+.info_project .box .info1 {
+    width: 50%;
+    min-height: 300px;
+    height: auto;
+    background: transparent; 
+    margin: 0 10px;
+}
+.info_project .box .info1 .top{
+    width: 100%;
+    min-height: 150px;
+    height: auto;
+    background: transparent; 
+    display: flex;
+    justify-content: center;
+}
+.info_project .box .info1 .top .top1{
+    width: 20%;
+    min-height: 500px;
+    height: auto;
+    padding-top: 50px;
+    text-align: center;
+    background: linear-gradient(162deg, rgba(179,135,40,1) 0%, rgba(191,149,63,1) 7%, rgba(198,164,78,1) 18%, rgba(251,245,183,1) 64%, rgba(252,246,186,1) 100%);
+}
+.info_project .box .info1 .top .top1 h1{
+    background: transparent;
+    font-size: 27px; 
+}
+.info_project .box .info1 .top .top1 p{
+    background: transparent;
+}
+.info_project .box .info1 .top .top2{
+    width: 80%;
+    min-height: 500px;
+    height: auto;
+    padding: 12px;
+    background: rgb(13, 7, 37); 
+    display: flex;
+    justify-content: center;
+}
+.info_project .box .info1 .top .top2 img{
+    height: auto;
+    width: 100%;
+    border: 5px solid rgb(25, 14, 75);
+}
+.info_project .box .info1 .bot{
+    width: 100%;
+    min-height: 150px;
+    height: auto;
+    background: rgb(243, 191, 128);
+    padding: 20px;
+}
+.info_project .box .info1 .bot p{
+    margin-bottom: 7px;
+}
+.info_project .box .info1 .top .top2 .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    background: transparent;
+}
+
+.info_project .box .info1 .top .top2 .slideshow-container .mySlides {
+    display: none;
+    background: transparent;
+}
+
+#slide1 {
+    display:block
+}
+.info_project .box .info1 .top .top2 .slideshow-container .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background: transparent;
+}
+  
+.info_project .box .info1 .top .top2 .slideshow-container .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    background: transparent;
+}
+  
+.info_project .box .info1 .top .top2 .slideshow-container .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    background: transparent;
+}
+
+.info_project .box .info1 .top .top2 .slideshow-container .mySlides .text {
+    color: #000000;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: fit-content;
+    text-align: center;
+    background: rgb(188, 181, 221);
+}
+  
+.info_project .box .info1 .top .top2 .slideshow-container .mySlides .numbertext {
+    color: #ffffff;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    background: rgb(25, 14, 75);
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* Contact Page CSS */
+.info_contact {
+    height: auto;
+    min-height: 60%;
+    align-items: center;
+    margin: 0px 30px 100px;
+    padding: 30px;
+    background: rgb(25, 14, 75);
+    border-radius: 25px;
+    border: 7px solid rgb(243, 191, 128);
+}
+.info_contact .sum {
+    padding: 25px;
+    align-items: center;
+    text-align: center;
+    background: rgb(25, 14, 75);
+    color: white;
+}
+.info_contact .box {
+    display: flex;
+    justify-content: space-evenly;
+    background: rgb(25, 14, 75);
+    margin-bottom: 40px;
+}
+.info_contact .box .contact_box {
+    border-radius: 25px;
+    height: 130px;
+    width: 30%;
+    background: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.info_contact .box .contact_box .logo{
+    border-radius: 15px;
+    width: 25%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info_contact .box .contact_box .sentence{
+    border-radius: 15px;
+    width: 70%;
+    height: 100%;
+    padding: 5px;
+    padding-top: 15px;
+}
