@@ -4,7 +4,7 @@
 	padding: 0;
     box-sizing: border-box;
     font-family: "Outfit", sans-serif;
-    background-image: url(../Media/bg.jpg);
+    background-image: url(./Media/bg.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
