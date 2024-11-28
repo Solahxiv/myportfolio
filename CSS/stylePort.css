@@ -4,7 +4,7 @@
 	padding: 0;
     box-sizing: border-box;
     font-family: "Outfit", sans-serif;
-    background-image: url(./Media/bg.JPG);
+    background-image: url(bg.JPG);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -389,7 +389,7 @@ body {
 }
 
 #slide1 {
-    display:block
+    display:block;
 }
 .info_project .box .info1 .top .top2 .slideshow-container .prev, .next {
     cursor: pointer;
